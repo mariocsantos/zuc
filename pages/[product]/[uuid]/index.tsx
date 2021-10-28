@@ -9,10 +9,7 @@ const Home: NextPage = () => (
   </Head>
 );
 
-export async function getServerSideProps(
-  { params }:
-  { params: { product: string; uuid: string } },
-) {
+export async function getServerSideProps({ params }: { params: { product: string; uuid: string } }) {
   // cal API to get product
   console.log(params);
 
